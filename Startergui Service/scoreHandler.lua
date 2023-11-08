@@ -1,13 +1,13 @@
 local repl 			:	ReplicatedStorage 	= game:GetService('ReplicatedStorage')
-local ts 									= game:GetService('TweenService')
+local ts 							= game:GetService('TweenService')
 
 
-local player 								= game:GetService('Players').LocalPlayer
-local leaderstats 							= player:WaitForChild('leaderstats')
-local scoreB : IntValue ,scoreS : IntValue 	= leaderstats:WaitForChild('Benar'),leaderstats:WaitForChild('Salah')
+local player 							= game:GetService('Players').LocalPlayer
+local leaderstats 						= player:WaitForChild('leaderstats')
+local scoreB : IntValue ,scoreS : IntValue 			= leaderstats:WaitForChild('Benar'),leaderstats:WaitForChild('Salah')
 
-local frame 		: Frame 				= script.Parent.Frame
-local Requirement 	: TextLabel 			= frame.Requirement
+local frame 			: Frame 			= script.Parent.Frame
+local Requirement 		: TextLabel 			= frame.Requirement
 task.spawn(function()
 	
 	while true do 
