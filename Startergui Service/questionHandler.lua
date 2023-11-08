@@ -1,13 +1,13 @@
-local player 								= game:GetService('Players').LocalPlayer
-local ts 									= game:GetService('TweenService')
-local repl				: ReplicatedStorage = game:GetService('ReplicatedStorage')
+local player 						= game:GetService('Players').LocalPlayer
+local ts 						= game:GetService('TweenService')
+local repl			: ReplicatedStorage 	= game:GetService('ReplicatedStorage')
 
 local questioner_ 		: RemoteEvent 		= repl:WaitForChild('Question_')
-local question  							= require(repl:WaitForChild('Library'):WaitForChild('Question'))
-local guiAnimation 							= require(repl:WaitForChild('Library'):WaitForChild('guiAnimation'))
+local question  					= require(repl:WaitForChild('Library'):WaitForChild('Question'))
+local guiAnimation 					= require(repl:WaitForChild('Library'):WaitForChild('guiAnimation'))
 
 local mainFrame 		: CanvasGroup 		= script.Parent
-local templateFold 		: Folder			= mainFrame.menuFrame.Temp
+local templateFold 		: Folder		= mainFrame.menuFrame.Temp
 
 
 local function GetRandomQuestion()
